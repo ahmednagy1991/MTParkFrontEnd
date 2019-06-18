@@ -1,0 +1,67 @@
+<div class="main-content">
+  <div class="container-fluid vertical-center">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header card-header-primary">
+            <!-- <h4 *ngIf="error!=null">{{error}}</h4> -->
+            <!-- <h4 class="card-title">Login</h4> -->
+            <p class="card-category"></p>
+          </div>
+          <div class="card-body">
+
+
+
+
+
+
+            <form (submit)="login()">
+
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                  <label for="email">Email/Username</label>
+                  <input [(ngModel)]="username" name="username" type="text" class="form-control" placeholder="Username" >
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                  <label>Password</label>
+                <input [(ngModel)]="password" name="password" type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+
+
+
+
+              <button type="submit" class="btn btn-primary pull-right">Login</button>
+              <div class="clearfix"></div>
+            </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</div>
