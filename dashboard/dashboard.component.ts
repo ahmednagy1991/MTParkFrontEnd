@@ -64,7 +64,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
 
 
-    this.socket.emit('editDoc', document);
+    this.socket.emit('updatePark',"test");
 
     
     this.chartColor = "#FFFFFF";

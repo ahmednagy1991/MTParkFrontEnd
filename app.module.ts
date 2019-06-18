@@ -17,9 +17,9 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { LoginComponent } from './login/login.component';
 import { NotifierModule } from "angular-notifier";
 import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
-import { ParkListComponent } from './park-list/park-list.component';
 
-const config: SocketIoConfig = { url: 'http://localhost:4444', options: {} };
+
+const config: SocketIoConfig = { url: 'https://parkmanagement.herokuapp.com', options: {} };
 
 @NgModule({
   imports: [
@@ -49,8 +49,7 @@ const config: SocketIoConfig = { url: 'http://localhost:4444', options: {} };
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    LoginComponent,
-    ParkListComponent
+    LoginComponent
 
   ],
   providers: [Api, AuthGuard, {

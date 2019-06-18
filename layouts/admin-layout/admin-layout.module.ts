@@ -14,7 +14,7 @@ import { ChartsModule } from 'ng2-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
-
+import { ParkListComponent } from '../../park-list/park-list.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -28,6 +28,7 @@ import { UpgradeComponent } from '../../upgrade/upgrade.component';
     DashboardComponent,
     UserProfileComponent,
     TableListComponent,
+    ParkListComponent,
     UpgradeComponent,
     TypographyComponent,
     IconsComponent,
